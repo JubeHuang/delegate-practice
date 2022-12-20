@@ -9,21 +9,21 @@
 /* Begin PBXBuildFile section */
 		8D79C8E0294DD01E0009A306 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D79C8DF294DD01E0009A306 /* AppDelegate.swift */; };
 		8D79C8E2294DD01E0009A306 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D79C8E1294DD01E0009A306 /* SceneDelegate.swift */; };
-		8D79C8E4294DD01E0009A306 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D79C8E3294DD01E0009A306 /* ViewController.swift */; };
 		8D79C8E7294DD01E0009A306 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D79C8E5294DD01E0009A306 /* Main.storyboard */; };
 		8D79C8E9294DD01F0009A306 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D79C8E8294DD01F0009A306 /* Assets.xcassets */; };
 		8D79C8EC294DD01F0009A306 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D79C8EA294DD01F0009A306 /* LaunchScreen.storyboard */; };
+		8D79C8F4294DD03F0009A306 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D79C8F3294DD03F0009A306 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		8D79C8DC294DD01E0009A306 /* delegate practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "delegate practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D79C8DF294DD01E0009A306 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D79C8E1294DD01E0009A306 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8D79C8E3294DD01E0009A306 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8D79C8E6294DD01E0009A306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D79C8E8294DD01F0009A306 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D79C8EB294DD01F0009A306 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D79C8ED294DD01F0009A306 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D79C8F3294DD03F0009A306 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,8 +58,8 @@
 			children = (
 				8D79C8DF294DD01E0009A306 /* AppDelegate.swift */,
 				8D79C8E1294DD01E0009A306 /* SceneDelegate.swift */,
-				8D79C8E3294DD01E0009A306 /* ViewController.swift */,
 				8D79C8E5294DD01E0009A306 /* Main.storyboard */,
+				8D79C8F3294DD03F0009A306 /* MainViewController.swift */,
 				8D79C8E8294DD01F0009A306 /* Assets.xcassets */,
 				8D79C8EA294DD01F0009A306 /* LaunchScreen.storyboard */,
 				8D79C8ED294DD01F0009A306 /* Info.plist */,
@@ -138,7 +138,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8D79C8E4294DD01E0009A306 /* ViewController.swift in Sources */,
+				8D79C8F4294DD03F0009A306 /* MainViewController.swift in Sources */,
 				8D79C8E0294DD01E0009A306 /* AppDelegate.swift in Sources */,
 				8D79C8E2294DD01E0009A306 /* SceneDelegate.swift in Sources */,
 			);
@@ -216,7 +216,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -270,7 +270,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -290,11 +290,13 @@
 				DEVELOPMENT_TEAM = 9A828DBKJV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "delegate practice/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "允許使用您的相機";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -318,11 +320,13 @@
 				DEVELOPMENT_TEAM = 9A828DBKJV;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "delegate practice/Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "允許使用您的相機";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
